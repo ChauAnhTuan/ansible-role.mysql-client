@@ -1,0 +1,10 @@
+---
+- name: Install the Mysql repo
+  yum:
+    name: "{{ __mysql_repository_url }}"
+    state: present
+
+- name: Install the Mysql client.
+  yum:
+    name: "{{ __mysql_package_name }}"
+    state: present

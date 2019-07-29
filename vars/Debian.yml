@@ -1,0 +1,4 @@
+---
+__mysql_repository_url: "https://repo.mysql.com/mysql-apt-config_0.8.13-1_all.deb"
+__mysql_package_name: mysql-client
+__mysql_service_name: mysql
