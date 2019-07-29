@@ -23,9 +23,9 @@ before_script:
 
 script:
   # Run tests.
-  - cat /etc/os-release
   - molecule test
   - ls
+  - cat /etc/os-release
 
 # notifications:
 #   webhooks: https://galaxy.ansible.com/api/v1/notifications/
