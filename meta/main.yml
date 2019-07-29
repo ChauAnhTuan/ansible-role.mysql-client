@@ -2,9 +2,9 @@
 dependencies: []
 
 galaxy_info:
-  author: ""
+  author: "ansible-roles"
   description: Mysql client for Linux.
-  company: ""
+  company: "ansible-roles"
   license: "license (BSD, MIT)"
   min_ansible_version: 2.4
   platforms:
@@ -22,5 +22,5 @@ galaxy_info:
   galaxy_tags:
     - database
     - mysql
-    - mysql client
+    - mysql-client
     - rdbms
