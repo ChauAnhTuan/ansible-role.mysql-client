@@ -23,7 +23,7 @@ before_script:
 
 script:
   # Run tests.
-  - cat /etc/release
+  - cat /etc/os-release
   - molecule test
   - ls
 
