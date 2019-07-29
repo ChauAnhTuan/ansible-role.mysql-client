@@ -1,6 +1,6 @@
 ---
 - name: Ensure Mysql client are installed.
   apt:
-    name: mysql-client
+    name: "{{ __mysql_package_name }}"
     update_cache: true
     state: present
