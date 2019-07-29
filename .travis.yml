@@ -11,10 +11,6 @@ env:
     - MOLECULE_DISTRO: ubuntu1604
     - MOLECULE_DISTRO: debian9
 
-addons:
-  apt:
-    update: true
-
 install:
 
   # Install test dependencies.
