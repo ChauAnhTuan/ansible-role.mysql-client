@@ -1,11 +1,10 @@
 ---
 language: python
-python: 2.7
 services: docker
 
 env:
   global:
-    - ROLE_NAME: postgresql
+    - ROLE_NAME: mysql-client
   matrix:
     - MOLECULE_DISTRO: centos7
     - MOLECULE_DISTRO: ubuntu1804
@@ -20,9 +19,7 @@ install:
 before_script:
   # Use actual Ansible Galaxy role name for the project directory.
   - cd ../
-  - ls -la
-  # - mv ansible-role-$ROLE_NAME geerlingguy.$ROLE_NAME
-  - cd ansible-role.mysql-client
+  - cd ansible-role.$ROLE_NAME
 
 script:
   # Run tests.
