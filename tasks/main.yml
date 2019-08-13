@@ -9,15 +9,3 @@
 
 - include_tasks: setup-Debian.yml
   when: ansible_os_family == 'Debian'
-
-# Mysql start.
-# - name: Mysql Start
-#   debug: msg=Start
-#   notify:
-#     - restarted mysql
-
-# - name: Ensure Mysql client service is running as configured.
-#   service:
-#     name: "{{ __mysql_service_name }}"
-#     state: "{{ mysql_service_state }}"
-#     enabled: "{{ mysql_service_enabled }}"

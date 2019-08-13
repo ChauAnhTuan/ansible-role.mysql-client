@@ -1,4 +1,11 @@
 ---
+- name: Ensure package idependent are installed.
+  yum:
+    name: "{{ yum_packages_name }}"
+    update_cache: true
+    state: present
+  when: yum_packages_name is defined
+
 - name: Install the Mysql repo
   yum:
     name: "{{ __mysql_repository_url }}"
